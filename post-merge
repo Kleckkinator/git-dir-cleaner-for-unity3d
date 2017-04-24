@@ -27,7 +27,7 @@ for dir in $dirsToCheck; do
 		continue
 	fi
 
-	((dirsRemovedCounter++))
+	let "dirsRemovedCounter += 1"
 
 	find "$dir" -type d -empty -delete
 done
